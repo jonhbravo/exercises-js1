@@ -1,9 +1,13 @@
-function boolChecker(bool) {
-  if (typeof bool === ) {
-    return "You've given me a bool, thanks!";
+function numberChecker(num) {
+  if (num > 20) {
+    return `${num} is greater than 20`;
+  } else if (num === 20) {
+    return `${num} is equal to 20`;
+  } else if (num < 20) {
+    return `${num} is less than 20`;
+  } else {
+    return `${num} isn't even a number :(`;
   }
-
-  return "No bool, not cool.";
 }
 
-boolChecker(true);
+console.log(numberChecker("hola"));
